@@ -1,0 +1,15 @@
+<form method="POST">
+    {% csrf_token %}
+    {{ login_form }}
+    <button type="submit">Login</button>
+</form>
+
+{% if messages %}
+    <div>
+        {% for message in messages %}
+            {{ messages }}
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% endblock %} 
