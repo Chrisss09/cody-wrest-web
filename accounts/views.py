@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect, reverse
 from django.contrib import auth, messages
 from accounts.forms import LoginForm
 
+def registration(request):
+    return render(request, 'registration.html')
+
 def login(request):
     # return render(request, 'login.html')
     if request.method == "POST":

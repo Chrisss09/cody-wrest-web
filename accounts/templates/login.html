@@ -4,6 +4,8 @@
     <button type="submit">Login</button>
 </form>
 
+<p>If you do not have an account, you can <a href="{% url 'registration' %}">register here.</a></p>
+
 {% if messages %}
     <div>
         {% for message in messages %}
